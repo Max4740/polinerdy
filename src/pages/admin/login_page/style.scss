@@ -1,0 +1,11 @@
+@use "sass:map";
+@import "style/pages/theme";
+@import "style/pages/responsive";
+
+.login_page{
+    background-color: #e9ecef;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

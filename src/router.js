@@ -10,6 +10,7 @@ import Danh_muc from "pages/user/Danh_muc";
 import Cold_war from "pages/user/Danh_muc/Cold_war";
 import Lich_su_VN from "pages/user/Danh_muc/Lich_su_VN";
 import Chuyen_muc_dac_biet from "pages/user/Danh_muc/Chuyen_muc_dac_biet";
+import Admin_login from "pages/admin/login_page"
 // const renderAdminRouter = () => {
 
 const renderUserRouter = () => {
@@ -49,6 +50,10 @@ const renderUserRouter = () => {
         {
             path: ROUTERS.USER.CHUYEN_MUC_DAC_BIET,
             component: <Chuyen_muc_dac_biet/>,
+        },
+        {
+            path: ROUTERS.ADMIN.LOGIN,
+            component: <Admin_login/>,
         },
 
     ];
