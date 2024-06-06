@@ -11,7 +11,7 @@ const Footer = () => {
     return <footer className="footer">
     <div className="container">
         <div className="row">
-            <div className="col-xl-2"> 
+            <div className="col-xl-6"> 
                 <div className="footer_about">
                     <ul>
                         <li className="logo_poli">
@@ -28,7 +28,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className="col-xl-2">
+            <div className="col-xl-6">
                 <div className="footer_widget">
                     <h6>LIÊN HỆ VÀ GÓP Ý</h6>
                     <form action="#">

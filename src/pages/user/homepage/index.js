@@ -11,7 +11,7 @@ const HomePage = () => {
             <div className="news">
                 <div className="container">
                 <div className="row">
-                    <div className="col-xl-6">
+                    <div className="col-xl-8">
                         <div className="lastest_new">
                             <div className="news__item-img">
                                 <a href="https://thanhnien.vn/thoi-su.htm">

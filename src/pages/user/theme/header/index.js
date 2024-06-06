@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import { ROUTERS } from "utils/router";
 import "./style.scss"
 import logo from "./logo_big.png"
+import { AiOutlineMenu  } from "react-icons/ai";
 
 const Header = () => {
 
@@ -59,7 +60,6 @@ const Header = () => {
                 </div>
 
                 <div className="col-xl-9">
-                    
                     <nav className="header_menu">
                         <ul>
                             {
@@ -83,7 +83,9 @@ const Header = () => {
                             
                         </ul>
                     </nav>
-
+                    <div className="header_menu_mobile">
+                        <AiOutlineMenu />
+                    </div>
                 </div>
 
             </div>

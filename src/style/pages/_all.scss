@@ -55,17 +55,28 @@ body {
         flex: 0 0 75%;
         max-width: 75%;
     }
-    .col-xl-2 {
+     .col-xl-8 {
+         flex: 0 0 60%;
+         max-width: 60%;
+     }
+    .col-xl-6 {
         flex: 0 0 50%;
         max-width: 50%;
     }
-    .col-xl-6 {
-        flex: 0 0 60%;
-        max-width: 60%;
-    }
     .col-xl-4 {
-        flex: 0 0 40%;
-        max-width: 40%;
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+}
+
+@include Responesive($TABLET_DEVICE){
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-md-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 

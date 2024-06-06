@@ -1,5 +1,5 @@
 @use "sass:map";
-@import "style/pages/theme";
+@import "style/pages/all";
 @import "style/pages/responsive";
 
 .header_top {
@@ -8,7 +8,8 @@
     background: #AA1B1A ;
 }
 .header_logo {
-    padding-top: 15px;
+    padding-top: 10px;
+    
     img{
         padding-top: 1%;
         padding-bottom: 1%;
@@ -17,8 +18,8 @@
 }
 
 .header_menu {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     ul{
         display: flex;
         justify-content: space-between;
@@ -35,11 +36,15 @@
                 font-weight: bold;
                 letter-spacing: 2px;
                 transition: all 0.3s;
-                padding: 5px 0;
+                padding: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
                 display: block;
                 
             }
             :hover {
+                //padding-left: 15px;
+                //padding-inline: 15px;
                 background: #E0E0E0;
                 color: #AA1B1A;
                 //padding: 10px;
@@ -81,3 +86,33 @@
     }
 }
 
+@include Responesive($TABLET_DEVICE)
+{
+    .header_menu{
+        display: none;
+    }
+    .header_menu_mobile{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+
+        svg{
+            font-size: 30px;
+            color: #E0E0E0;
+        }
+    }
+}
+@include Responesive($DESKTOP)
+{
+    .header_menu_mobile{
+        display: none;
+    }
+}
+
+@include Responesive($MEDIUM_DEVICE)
+{
+    .header_menu_mobile{
+        display: none;
+    }
+}
